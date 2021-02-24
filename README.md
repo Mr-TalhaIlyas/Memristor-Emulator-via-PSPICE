@@ -2,7 +2,7 @@
 
 In this repo I simulate the effect of 4th basic circuit element called "Memristor" using the following circuit.
 
-![alt text](img0.png)
+![alt text](https://github.com/Mr-TalhaIlyas/Memristor-Emulator-via-PSPICE/blob/master/screens/img0.png)
 
 ## Introduction
 In 1971, Leon Chua hypothesized the fourth fundamental circuit component while attempting to build up a missing constitutive relationship between the electrical charge and the
@@ -17,27 +17,27 @@ ferromagnetic center memory furthermore the dissipative qualities of a resistor.
 
 First make the PSPICE circuit of the above digram.
 
-![alt text](img1.png)
+![alt text](https://github.com/Mr-TalhaIlyas/Memristor-Emulator-via-PSPICE/blob/master/screens/img1.png)
 
 MbreakP Specified Parameters:
 
-![alt text](eq1.png)
+![alt text](https://github.com/Mr-TalhaIlyas/Memristor-Emulator-via-PSPICE/blob/master/screens/eq1.png)
 
 Setting these values as follows:
 
-![alt text](eq2.png)
+![alt text](https://github.com/Mr-TalhaIlyas/Memristor-Emulator-via-PSPICE/blob/master/screens/eq2.png)
 
 DbreakZ as Zener diode with following parameters:
 
-![alt text](eq3.png)
+![alt text](https://github.com/Mr-TalhaIlyas/Memristor-Emulator-via-PSPICE/blob/master/screens/eq3.png)
 
 It gave the following shape of pinched hysteresis loop
 
-![alt text](img2.png)
+![alt text](https://github.com/Mr-TalhaIlyas/Memristor-Emulator-via-PSPICE/blob/master/screens/img2.png)
 
 Curves of Vgs and Id are as follows;
 
-![alt text](img3.png)
+![alt text](https://github.com/Mr-TalhaIlyas/Memristor-Emulator-via-PSPICE/blob/master/screens/img3.png)
 
 Modifying the above circuit for now as follows;
 
