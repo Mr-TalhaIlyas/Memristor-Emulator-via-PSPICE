@@ -1,0 +1,118 @@
+
+**** 12/20/19 10:32:21 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Memristor_IDX"  [ D:\Circuts\Memristor\Memristor_IDX-PSpiceFiles\SCHEMATIC1\Memristor_IDX.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Memristor_IDX.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\Talha\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 1s 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source MEMRISTOR_IDX
+M_M1         N00406 N00292 0 N00172 MbreakN           
+C_C1         0 N00292  16u  TC=0,0 
+V_V1         N00194 0  AC 0
++SIN 0 5 1 0 0 0
+V_V2         N00172 0 5Vdc
+R_R1         N00406 N00194  100 TC=0,0 
+V_V4         0 N00292  
++PULSE 0 -3 0.8 10u 10u 10m 60s
+
+**** RESUMING Memristor_IDX.cir ****
+.END
+
+**** 12/20/19 10:32:21 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Memristor_IDX"  [ D:\Circuts\Memristor\Memristor_IDX-PSpiceFiles\SCHEMATIC1\Memristor_IDX.sim ] 
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               MbreakN         
+               NMOS            
+       LEVEL    1            
+           L  100.000000E-06 
+           W  100.000000E-06 
+         VTO    0            
+          KP   20.000000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    0            
+          IS   10.000000E-15 
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+          CJ    0            
+        CJSW    0            
+        CGSO    0            
+        CGDO    0            
+        CGBO    0            
+         TOX    0            
+          XJ    0            
+       UCRIT   10.000000E+03 
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+Starting pseudo-transient algorithm.
+
+ERROR -- Convergence problem in transient bias point calculation
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00172)    1.4293 (N00194)    0.0000 (N00292)    0.0000 (N00406)     .7230 
+
+
+  These voltages failed to converge:
+
+    V(N00406)                 =   141.93pV  \   723.04mV
+
+  These supply currents failed to converge:
+
+    I(V_V1)                   =    1.419pA  \    7.230mA
+    I(V_V2)                   =   -31.71pA  \   -10.00GA
+
+  These devices failed to converge:
+    M_M1      
+
+ERROR(ORPSIM-15659): Discontinuing simulation due to convergence problem
+
+**** Interrupt ****

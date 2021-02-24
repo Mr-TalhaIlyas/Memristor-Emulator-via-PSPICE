@@ -1,0 +1,9 @@
+* source MEMRISTOR_IDX
+M_M1         N00406 N00292 0 N00174 MbreakN           
+C_C1         0 N00292  16u  TC=0,0 
+V_V1         N00194 0  AC 0
++SIN 0 5 1 0 0 0
+V_V2         0 N00174 5Vdc
+R_R1         N00406 N00194  100 TC=0,0 
+V_V4         0 N00292  
++PULSE 0 -3 0.8 10u 10u 10m 60s

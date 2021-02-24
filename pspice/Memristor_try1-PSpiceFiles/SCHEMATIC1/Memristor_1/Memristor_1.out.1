@@ -1,0 +1,45 @@
+
+**** 12/20/19 10:14:29 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Memristor_1"  [ D:\Circuts\Memristor\Memristor_try1-PSpiceFiles\SCHEMATIC1\Memristor_1.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Memristor_1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\Talha\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 1s 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source MEMRISTOR_TRY1
+R_R1         N00180 N00219  300 TC=0,0 
+C_C1         0 N01892  500f  TC=0,0 
+V_V2         N00219 0  AC 0
++SIN 0 5 1 0 0 0
+V_V3         N01087 0 5Vdc
+M_M2         N00180 N01892 0 N01087 MbreakP           
+
+**** RESUMING Memristor_1.cir ****
+.END
+
+ERROR(ORPSIM-15142): Node N01892 is floating
+

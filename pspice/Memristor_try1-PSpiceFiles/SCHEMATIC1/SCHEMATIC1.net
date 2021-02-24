@@ -1,0 +1,7 @@
+* source MEMRISTOR_TRY1
+R_R1         N00180 N00219  300 TC=0,0 
+C_C1         0 N01892  500f  TC=0,0 
+V_V2         N00219 0  AC 0
++SIN 0 5 1 0 0 0
+V_V3         N01087 0 5Vdc
+M_M2         N00180 N01892 0 N01087 MbreakP           
