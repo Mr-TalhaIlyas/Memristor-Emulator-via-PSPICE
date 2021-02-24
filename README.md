@@ -57,19 +57,19 @@ Looking closely why the current is zero from 0.36 secnds to 0.651 seconds lets l
 
 Above graph shows that form 0sec to 0.4 sec 
 
-![alt text](eq4.png)
+![alt text](https://github.com/Mr-TalhaIlyas/Memristor-Emulator-via-PSPICE/blob/master/screens/eq4.png)
 
 So,
 
-![alt text](eq5.png)
+![alt text](https://github.com/Mr-TalhaIlyas/Memristor-Emulator-via-PSPICE/blob/master/screens/eq5.png)
 
 Which means that the MOSFET is in Triode/Ohmic region, but after 0.4 sec as Vgs starts dropping from its peak value and falls below Vgs i.e.
 
-![alt text](eq6.png)
+![alt text](https://github.com/Mr-TalhaIlyas/Memristor-Emulator-via-PSPICE/blob/master/screens/eq6.png)
 
 Which means it goes into Cut-off region so;
 
-![alt text](eq7.png)
+![alt text](https://github.com/Mr-TalhaIlyas/Memristor-Emulator-via-PSPICE/blob/master/screens/eq7.png)
 
 ![alt text](https://github.com/Mr-TalhaIlyas/Memristor-Emulator-via-PSPICE/blob/master/screens/img8.png)
 
