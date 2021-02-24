@@ -41,19 +41,19 @@ Curves of Vgs and Id are as follows;
 
 Modifying the above circuit for now as follows;
 
-![alt text](img4.png)
+![alt text](https://github.com/Mr-TalhaIlyas/Memristor-Emulator-via-PSPICE/blob/master/screens/img4.png)
 
 It gives the following output of pinched hysterics loop;(Capacitor Initial Voltage=-3V)
 
-![alt text](img5.png)
+![alt text](https://github.com/Mr-TalhaIlyas/Memristor-Emulator-via-PSPICE/blob/master/screens/img5.png)
 
 Curves of Vgs and Id are as follows;
 
-![alt text](img6.png)
+![alt text](https://github.com/Mr-TalhaIlyas/Memristor-Emulator-via-PSPICE/blob/master/screens/img6.png)
 
 Looking closely why the current is zero from 0.36 secnds to 0.651 seconds lets look at the Vgs and Vds voltage curves (Here Vth=-1V)
 
-![alt text](img7.png)
+![alt text](https://github.com/Mr-TalhaIlyas/Memristor-Emulator-via-PSPICE/blob/master/screens/img7.png)
 
 Above graph shows that form 0sec to 0.4 sec 
 
@@ -71,10 +71,10 @@ Which means it goes into Cut-off region so;
 
 ![alt text](eq7.png)
 
-![alt text](img8.png)
+![alt text](https://github.com/Mr-TalhaIlyas/Memristor-Emulator-via-PSPICE/blob/master/screens/img8.png)
 
 Between vgs – vthh and vds and Id seperate
 
-![alt text](img9.png)
+![alt text](https://github.com/Mr-TalhaIlyas/Memristor-Emulator-via-PSPICE/blob/master/screens/img9.png)
 
 Vds vs Vgs and Vds vs Id
